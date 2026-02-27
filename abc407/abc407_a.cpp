@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define all(x) (x).begin(), (x).end()
+
+const int INF = 1e9;
+const ll LINF = 1e18;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    double a, b;
+    cin >> a >> b;
+    double fd = a/b;
+    int fi = a/b;
+    if (fd - fi >= 0.5) {
+        cout << fi + 1 << endl;
+        return 0;
+    }
+    cout << fi << endl;
+    return 0;
+}
