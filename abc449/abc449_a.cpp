@@ -18,7 +18,6 @@ int main() {
     cin.tie(nullptr);
     double d;
     cin >> d;
-    cout << fixed << setprecision(15);
-    cout << d * d / 4 * 3.141592653589793238 << endl;
+    cout << fixed << setprecision(15) << d * d * M_PI / 4 << endl;
     return 0;
 }
